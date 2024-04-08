@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results page</title>
+</head>
+<body>
+    <style>
+        .results {
+
+        }
+
+        .results ul {
+            list-style-type: none;
+        }
+
+        .results ul li {
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0px 0px 7px gray;
+            margin-bottom: 1rem;
+        }
+
+        .results h2 {
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+
+    <div class="results container">
+        <h2>
+            Following jobs are best match to your desired title and skills
+        </h2>
+        <ul>
+            {% for jobLists in data %}
+            <li>
+                {% for jobs in jobLists %}
+                    {% if forloop.counter == 1 %}
+                        <h3>{{jobs}}</h3>
+                    {% elif forloop.counter == 2 %}
+                        <span>Address: {{jobs}}</span>
+                    {% elif forloop.counter == 3 %}
+                        <p>Skills required: {{jobs}}</p>
+                    {% endif %}
+                {% endfor %}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

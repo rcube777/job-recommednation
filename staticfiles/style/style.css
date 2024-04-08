@@ -1,0 +1,113 @@
+.body {
+    font-family: Arial, sans-serif;
+    background: url('https://media.istockphoto.com/id/1279104620/photo/top-view-of-a-white-desktop-concept-job-search.jpg?s=612x612&w=0&k=20&c=Ow_kvA2wQ4rLlqX_oFHgpjLb1JMKyPQKLOPzbu6w6qw=');
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login-container {
+    background-color: #ebf7ff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.login-container h2 {
+    text-align: center;
+    color: #1b1b1b;
+}
+
+.login-form {
+    margin-top: 30px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #adadad;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3165e9;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-group button:hover {
+    background-color: #95e98c;
+    color: black;
+}
+
+
+
+/* form-css */
+
+.form {
+    font-family: Arial, sans-serif;
+    margin: 50px;
+    
+    
+}
+
+.form-container {
+    border: 2px solid #3c3c3c;
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    background-color: white;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #174ff5;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #9b9696;
+}

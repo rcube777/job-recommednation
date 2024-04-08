@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}Register{% endblock %}
+
+{% block content %}
+<style>
+     
+</style>
+
+<div class="container">
+    <form class="form-signin border border-5-black p-5" method="post">
+        {% csrf_token %}
+        <h2 class="text-center mb-4">Register</h2>
+        <!-- {{ form }} -->
+      
+        <label for="inputEmail" class="sr-only">Username</label>
+        <input type="username" id="inputEmail"  class="form-control mb-3" name="username" placeholder="Username" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword"  name="password1" class="form-control mb-3" placeholder="Password" required>
+        <label for="inputPassword" class="sr-only">Confirm Password</label>
+        <input type="password" id="inputPassword"  name="password2" class="form-control mb-3" placeholder="Confirm Password" required>
+        {% for field in form %}
+        <div class="form-group w-100">
+            
+            {% if field.errors %}
+            <small class="form-text text-danger">{{ field.errors }}</small>
+            {% endif %}
+        </div>
+        {% endfor %}
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+    </form>
+</div>
+{% endblock %}
